@@ -5,7 +5,7 @@ if number < 0:
     number1 = int("-"+str(number)[-1])
     print(number1)
 else:
-    number1 = int("-" + str(number)[-1])
+    number1 = int(str(number)[-1])
 if number1 > 5:
     print(f"Last digit of {number} is {number1} and is greater than 5")
 elif number1 == 0:
