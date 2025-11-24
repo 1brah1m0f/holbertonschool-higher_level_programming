@@ -3,7 +3,6 @@ import random
 number = random.randint(-10000, 10000)
 if number < 0:
     number1 = int("-"+str(number)[-1])
-    print(number1)
 else:
     number1 = int(str(number)[-1])
 if number1 > 5:
