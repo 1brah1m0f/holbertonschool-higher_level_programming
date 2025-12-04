@@ -6,4 +6,6 @@ def delete_at(my_list=[], idx=0):
         if idx != s:
             new_list.append(i)
         s = s + 1
+    my_list= new_list
     return new_list
+
