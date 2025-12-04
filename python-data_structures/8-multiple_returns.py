@@ -1,10 +1,5 @@
 #!/usr/bin/python3
-def multiple_returns(sentence,length):
+def multiple_returns(sentence):
     if sentence == "":
-        first = None
-        lenght = len(sentence)
-    else:
-        lenght = len(sentence)
-        first = sentence[0]
-    return lenght
-    return first
+        return (0, None)
+    return (len(sentence), sentence[0])
