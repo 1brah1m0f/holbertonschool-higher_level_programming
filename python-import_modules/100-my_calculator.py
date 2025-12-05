@@ -6,7 +6,7 @@ if n == "+":
     print("{} {} {} = {}".format(a, n, b, add(a, b)))
 elif n == "-":
     print("{} {} {} = {}".format(a, n, b, sub(a, b)))
-elif n == "-":
+elif n == "*":
     print("{} {} {} = {}".format(a, n, b, mul(a, b)))
-elif n == "-":
+elif n == "/":
     print("{} {} {} = {}".format(a, n, b, div(a, b)))
