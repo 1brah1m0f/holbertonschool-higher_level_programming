@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 def square_matrix_simple(matrix=[]):
-    s=[]
+    s = []
     new_matrix = []
     for i in matrix:
         for j in i:
             j*=j
             s.append(j)
         new_matrix.append(s)
-        s=[]
+        s = []
     return new_matrix
