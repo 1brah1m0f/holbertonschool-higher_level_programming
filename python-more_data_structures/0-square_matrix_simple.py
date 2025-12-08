@@ -7,4 +7,5 @@ def square_matrix_simple(matrix=[]):
             j*=j
             s.append(j)
         new_matrix.append(s)
-    return matrix
+        s=[]
+    return new_matrix
