@@ -4,7 +4,7 @@ def roman_to_int(roman_string):
     s = 0
     if len(roman_string) == 1:
         s = a[0]
-        break
+        return s
     s += a[-1]
     for i in roman_string:
         if i == "I":
@@ -26,4 +26,5 @@ def roman_to_int(roman_string):
                 s -= a[i]
             else:
                 s += a[i]
+    return s
 
