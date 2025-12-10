@@ -8,7 +8,7 @@ def roman_to_int(roman_string):
         if i == "I":
             a.append(1)
         elif i == "V":
-          a.append(5)
+            a.append(5)
         elif i == "X":
             a.append(10)
         elif i == "L":
