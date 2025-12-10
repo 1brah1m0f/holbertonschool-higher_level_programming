@@ -20,11 +20,11 @@ def roman_to_int(roman_string):
         if len(roman_string) == 1:
             s = a[0]
             return s
-        for i in range(len(a) - 1):
-            if a[i] < a[i + 1]:
-                s -= a[i]
-            else:
-                s += a[i]
-        s += a[-1]
+    for i in range(len(a) - 1):
+        if a[i] < a[i + 1]:
+            s -= a[i]
+        else:
+            s += a[i]
+    s += a[-1]
     return s
 
