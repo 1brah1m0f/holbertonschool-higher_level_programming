@@ -2,9 +2,6 @@
 def roman_to_int(roman_string):
     a = []
     s = 0
-    if len(roman_string) == 1:
-        s = roman_string[0]
-        return s
     for i in roman_string:
         if i == "I":
             a.append(1)
@@ -20,6 +17,9 @@ def roman_to_int(roman_string):
             a.append(500)
         elif i == "M":
             a.append(1000)
+        if len(roman_string) == 1:
+            s = a[0]
+            return s
         for i in range(len(a) - 1):
             if a[i] < a[i + 1]:
                 s -= a[i]
