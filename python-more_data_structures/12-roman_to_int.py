@@ -29,4 +29,3 @@ def roman_to_int(roman_string):
             s += a[i]
     s += a[-1]
     return s
-
