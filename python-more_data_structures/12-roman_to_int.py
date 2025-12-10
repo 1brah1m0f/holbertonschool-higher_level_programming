@@ -3,7 +3,7 @@ def roman_to_int(roman_string):
     a = []
     s = 0
     if len(roman_string) == 1:
-        s = a[0]
+        s = roman_string[0]
         return s
     s += a[-1]
     for i in roman_string:
