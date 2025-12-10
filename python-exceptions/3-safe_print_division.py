@@ -5,6 +5,5 @@ def safe_print_division(a, b):
     except ZeroDivisionError:
         return None
     finally:
-        print("Operation attempted")
-    print("{:.2f}".format(result))
+        print("{}".format("Operation attempted"))
     return result
