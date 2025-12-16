@@ -2,7 +2,7 @@
 """hm"""
 
 class Square:
-    """hello """
+    """hello"""
     def __init__(self, size=0):
         """Raises:
             TypeError: size must be an integer
