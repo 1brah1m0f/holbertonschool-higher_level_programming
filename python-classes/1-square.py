@@ -9,7 +9,7 @@ class Square:
     Attributes:
         __size (int): The size of the side of the square.
     """
-    
+
     def __init__(self, size):
         """
         Initializes a new Square.
