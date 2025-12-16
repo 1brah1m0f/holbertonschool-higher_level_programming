@@ -2,7 +2,9 @@
 """hm"""
 
 class Square:
-    """hello"""
+    """hello
+    hi
+    ha"""
     def __init__(self, size=0):
 
         """Raises:
