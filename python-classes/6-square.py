@@ -9,7 +9,8 @@ class Square:
         if isinstance(size, int):
 #            sizenin int olub olmadiqin yoxlayir
             if size >= 0:
-#            sizenin musbet olub olmadiqin yoxlayir eger duzduse beraber edir sizeye eks halda valueError verir
+#            sizenin musbet olub olmadiqin yoxlayir
+#             eger duzduse beraber edir sizeye eks halda valueError verir
                 self.__size = size
             else:
                 raise ValueError("size must be >= 0")
@@ -27,10 +28,11 @@ class Square:
             print()
             return
         for _ in range(self.__position[1]):
-#           nece bos setir olacaqin gosterir 2 ci hissede yani yuxaridan asagi nece bosluq olacaq
+#           nece bos setir olacaqin gosterir 2 ci hissede
+#           yani yuxaridan asagi nece bosluq olacaq
 #           meselen eger bununu cavabi 2  (2, (0,2)) olsa
-            
-            
+# 
+# 
 #           ##
 #           ##
 #           bele olur cixis
@@ -54,7 +56,8 @@ class Square:
                 len(value) != 2 or \
                 not all(isinstance(n, int) and n >= 0 for n in value):
             raise TypeError("position must be a tuple of 2 positive integers")
-        # eger positionun her iki deyiseninden biri int yada + olmasa error verir
+        # eger positionun her iki deyiseninden biri 
+        # int yada + olmasa error verir
         self.__position = value
 
     @property
