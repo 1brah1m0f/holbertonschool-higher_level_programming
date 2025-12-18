@@ -25,11 +25,7 @@ class Square:
             return
         
         for i in range(self.__size):
-            print(end=" ")
-            for j in range(self.__size):
-                print("#", end="")
-            print()
-
+            print("#" * self.__size)
     @property
     def position(self):
         return self.__position
