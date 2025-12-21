@@ -51,12 +51,12 @@ class Rectangle:
     def __str__(self):
         """Düzbucaqlını '#' simvolu ilə təsvir edən string qaytarır"""
         if self.__width == 0 or self.__height == 0:
-            return "" # Boş sətir qaytarmaq vacibdir
+            return
 
         rect_str = []
         for i in range(self.__height):
             rect_str.append("#" * self.__width)
-            
+       
         return "\n".join(rect_str)
 
     def __repr__(self):
