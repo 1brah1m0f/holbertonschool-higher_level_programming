@@ -56,7 +56,7 @@ class Rectangle:
         rect_str = []
         for i in range(self.__height):
             rect_str.append("#" * self.__width)
- 
+
         return "\n".join(rect_str)
 
     def __repr__(self):
