@@ -6,7 +6,7 @@ class Rectangle:
     """mimimim"""
 
     number_of_instances = 0
-
+    print_symbol = "#"
     def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
@@ -59,7 +59,7 @@ class Rectangle:
 
         rect_str = []
         for i in range(self.__height):
-            rect_str.append("#" * self.__width)
+            rect_str.append(Rectangle.print_symbol * self.__width)
 
         return "\n".join(rect_str)
 
