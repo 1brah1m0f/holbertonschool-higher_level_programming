@@ -57,11 +57,8 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return ""
 
-        rect_str = []
-        for i in range(self.__height):
-            rect_str.append(Rectangle.print_symbol * self.__width)
-
-        return "\n".join(rect_str)
+        symbol = str(getattr(self, "print_symbol", Rectangle.print_symbol))
+        return "\n".join([symbol * self.width for _ in range(self.height)])
 
     def __repr__(self):
         """Return string to recreate new instance with eval()"""
