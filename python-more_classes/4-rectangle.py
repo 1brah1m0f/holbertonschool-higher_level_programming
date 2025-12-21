@@ -50,11 +50,14 @@ class Rectangle:
 
     def __str__(self):
         if self.width == 0 or self.height == 0:
-            return ""
+            return 
+        result = ""
         for _ in range(self.height):
             for i in range(self.width):
                 print("#", end="")
             print()
+        result += "#" * self.width + "\n"
+        return result.rstrip
 
     def __repr__(self):
         """Return string to recreate new instance with eval()"""
