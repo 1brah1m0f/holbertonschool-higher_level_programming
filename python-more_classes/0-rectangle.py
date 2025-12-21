@@ -5,3 +5,4 @@
 class Rectangle:
     """Bu hissə isə Rectangle sinfinin sənədləşdirilməsidir."""
     pass
+
