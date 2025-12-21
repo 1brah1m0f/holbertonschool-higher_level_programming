@@ -56,7 +56,7 @@ class Rectangle:
             for i in range(self.width):
                 print("#", end="")
             print()
-        result += "#" * self.width + "\n"
+            result += "#" * self.width + "\n"
         return result.rstrip
 
     def __repr__(self):
