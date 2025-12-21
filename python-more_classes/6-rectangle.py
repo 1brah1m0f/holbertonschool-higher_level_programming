@@ -6,11 +6,12 @@ class Rectangle:
     """mimimim"""
 
     number_of_instances = 0
-    
+
     def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
-
+        
+        number_of_instances += 1
     def area(self):
         if self.__width == 0 or self.__height == 0:
             return 0
@@ -68,3 +69,4 @@ class Rectangle:
 
     def __del__(self):
         print("Bye rectangle...")
+        number_of_instances -= 1
