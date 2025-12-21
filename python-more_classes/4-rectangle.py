@@ -49,15 +49,6 @@ class Rectangle:
             raise TypeError("height must be an integer")
 
     def __str__(self):
-        if self.width == 0 or self.height == 0:
-            return 
-        for _ in range(self.height):
-            for i in range(self.width):
-                print("#", end="")
-            print()
-
-
-    def __str__(self):
         """Düzbucaqlını '#' simvolu ilə təsvir edən string qaytarır"""
         if self.__width == 0 or self.__height == 0:
             return "" # Boş sətir qaytarmaq vacibdir
@@ -67,3 +58,7 @@ class Rectangle:
             rect_str.append("#" * self.__width)
             
         return "\n".join(rect_str)
+
+    def __repr__(self):
+        """Return string to recreate new instance with eval()"""
+        return f"Rectangle({self.width}, {self.height})"
