@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""i think don't need it"""
+"""Bu hissə modulun (faylın) sənədləşdirilməsidir."""
 
 class Rectangle:
+    """Bu hissə isə Rectangle sinfinin sənədləşdirilməsidir."""
     pass
