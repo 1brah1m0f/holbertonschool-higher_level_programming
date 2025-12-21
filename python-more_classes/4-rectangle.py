@@ -51,14 +51,19 @@ class Rectangle:
     def __str__(self):
         if self.width == 0 or self.height == 0:
             return 
-        result = ""
         for _ in range(self.height):
             for i in range(self.width):
                 print("#", end="")
             print()
-            result += "#" * self.width + "\n"
-        return result.rstrip
 
-    def __repr__(self):
-        """Return string to recreate new instance with eval()"""
-        return f"Rectangle({self.width}, {self.height})"
+
+    def __str__(self):
+        """Düzbucaqlını '#' simvolu ilə təsvir edən string qaytarır"""
+        if self.__width == 0 or self.__height == 0:
+            return "" # Boş sətir qaytarmaq vacibdir
+
+        rect_str = []
+        for i in range(self.__height):
+            rect_str.append("#" * self.__width)
+            
+        return "\n".join(rect_str)
