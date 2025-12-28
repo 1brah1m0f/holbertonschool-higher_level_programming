@@ -6,7 +6,7 @@
 >>>     bg.integer_validator("name", "John")
 >>> except Exception as e:
 >>>     print("[{}] {}".format(e.__class__.__name__, e))
-John must be an integer
+name must be an integer
 >>> try:
 >>>     bg.integer_validator("age", 0)
 >>> except Exception as e:
