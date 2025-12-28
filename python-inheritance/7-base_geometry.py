@@ -1,16 +1,18 @@
 #!/usr/bin/python3
-"""hello i am iron man"""
+"""hm hm hm hm"""
 
 
 class BaseGeometry:
-    """hm"""
+    """mmimimiim omrun tekeri """
 
     def area(self):
+        """Sahə hələ hesablanmayıb qqaqa"""
         raise Exception("area() is not implemented")
 
     def integer_validator(self, name, value):
-        if isinstance(name, str):
-            if not isinstance(value, int):
-                raise TypeError(f"{name} must be an integer")
+        """Value-nun tam ədəd olub-olmadığını yoxlayır"""
+
+        if type(value) is not int:
+            raise TypeError("{} must be an integer".format(name))
         if value <= 0:
-            raise ValueError(f"{name} must be greater than 0")
+            raise ValueError("{} must be greater than 0".format(name))
