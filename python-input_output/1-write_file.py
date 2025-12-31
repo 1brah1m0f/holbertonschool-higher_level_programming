@@ -5,5 +5,4 @@
 def write_file(filename="", text=""):
     """i am Shixi"""
     with open(filename, "w", encoding="utf-8") as f:
-        text += f.write()
-        return len(text)
+        return f.write()
