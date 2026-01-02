@@ -7,6 +7,5 @@ import json
 
 def load_from_json_file(filename):
     """hm what is that"""
-    with open(filename, "w", uncoding="utf-8") as f:
+    with open(filename, "w") as f:
         return json.load(filename)
-
