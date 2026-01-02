@@ -5,5 +5,5 @@
 def append_write(filename="", text=""):
     """mimim"""
 
-    with open(filename, "r", encoding="utf-8") as s:
-        return s.write(text)
+    with open(filename, "r", encoding="utf-8") as f:
+        return f.write(text)
