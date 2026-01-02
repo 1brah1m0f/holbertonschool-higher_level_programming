@@ -8,4 +8,4 @@ import json
 def load_from_json_file(filename):
     """hm what is that"""
     with open(filename, "w") as f:
-        return json.load(filename)
+        return json.load(f)
