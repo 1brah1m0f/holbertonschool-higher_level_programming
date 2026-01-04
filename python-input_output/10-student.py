@@ -15,7 +15,7 @@ class Student:
     def to_json(self, attrs=None):
         """mimimim"""
 
-        if attrs == None:
+        if attrs is None:
             return self.__dict__
         elif isinstance(attrs, list):
             result = {}
