@@ -16,7 +16,7 @@ class Student:
     def to_json(self, attrs=None):
         """mimimim"""
 
-        if attrs is None:
+        if attrs == None:
             return self.__dict__
         elif type(attrs) == list:
             result = {}
