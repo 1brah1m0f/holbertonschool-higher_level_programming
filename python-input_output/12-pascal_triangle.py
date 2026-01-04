@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 """mi"""
 
-
-
 def pascal_triangle(n):
     """hm"""
 
