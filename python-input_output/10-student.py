@@ -2,7 +2,7 @@
 """Docstring for python-input_output.0-student"""
 
 
-class student:
+class Student:
     """1"""
 
 
