@@ -21,7 +21,7 @@ def fetch_and_print_posts():
 def fetch_and_save_posts():
     response = requests.get('https://jsonplaceholder.typicode.com/posts')
     data = response.json()
-    with open(data, "w",encoding="utf-8") as f:
+    with open('post.csv', "w",encoding="utf-8") as f:
         fieldnames = ['id', 'title', 'body']
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
