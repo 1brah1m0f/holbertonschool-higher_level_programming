@@ -5,8 +5,6 @@ import json
 import requests
 import csv
 
-response = requests.get('https://jsonplaceholder.typicode.com/posts')
-
 
 def fetch_and_print_posts():
     response = requests.get('https://jsonplaceholder.typicode.com/posts')
