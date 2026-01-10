@@ -9,7 +9,9 @@ response = requests.get('https://jsonplaceholder.typicode.com/posts')
 
 
 def fetch_and_print_posts():
-    print("Status Code:", response.status_code)
+    response = requests.get('https://jsonplaceholder.typicode.com/posts')
+
+    print("Status Code: {}".format(response.status_code))
     if response.status_code == 200:
         data = response.json()
         for i in data:
@@ -17,6 +19,7 @@ def fetch_and_print_posts():
 
 
 def fetch_and_save_posts():
+    response = requests.get('https://jsonplaceholder.typicode.com/posts')
     data = response.json()
     with open(data, "w",encoding="utf-8") as f:
         fieldnames = ['id', 'title', 'body']
