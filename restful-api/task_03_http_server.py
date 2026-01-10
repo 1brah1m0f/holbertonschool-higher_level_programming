@@ -44,4 +44,7 @@ class MyHandler(BaseHTTPRequestHandler):
             self.send_header("Content-type","text/plain")
             self.end_headers()
             self.wfile.write(b"Endpoint not found")
-    
+PORT = 8000
+server = HTTPServer(("localhost", PORT), APIBuilder)
+print(f"Server running on http://localhost:{PORT}")
+server.serve_forever()
