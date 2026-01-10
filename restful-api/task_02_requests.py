@@ -19,22 +19,18 @@ def fetch_and_print_posts():
 
 
 def fetch_and_save_posts():
-    # 1. Sorğunu göndəririk
+
     response = requests.get('https://jsonplaceholder.typicode.com/posts')
-    
+
     if response.status_code == 200:
         data = response.json()
-        
-        # 2. DÜZƏLİŞ: Faylın adı dırnaq içində string kimi yazılmalıdır ('posts.csv')
-        # newline='' parametri boş sətirlərin yaranmaması üçündür
         with open('posts.csv', 'w', encoding='utf-8', newline='') as f:
             fieldnames = ['id', 'title', 'body']
             writer = csv.DictWriter(f, fieldnames=fieldnames)
-            
+
             writer.writeheader()
-            
+
             for post in data:
-                # Yalnız lazım olan sahələri seçib yazırıq
                 writer.writerow({
                     'id': post['id'],
                     'title': post['title'],
