@@ -1,3 +1,4 @@
---hihihihihihi
+-- hihihihihihi
 SELECT
-    IF(SHOW DATABASES = 'hbtn_0c_0', TRUE, FALSE )
+    CREATE DATABASE IF NOT EXISTS hbtn_0c_0;
+SHOW DATABASE
