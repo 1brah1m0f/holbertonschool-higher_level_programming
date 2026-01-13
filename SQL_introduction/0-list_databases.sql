@@ -1,4 +1,4 @@
 --this is my comment
 show DATABASE;
-select users;
-
+create table shixi;
+select table shixi;
