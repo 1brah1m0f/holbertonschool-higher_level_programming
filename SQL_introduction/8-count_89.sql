@@ -1,2 +1,2 @@
 -- name 
-SHOW hbtn_0c_0.first_table;
+COUNT * FROM first_table where id = 89;
