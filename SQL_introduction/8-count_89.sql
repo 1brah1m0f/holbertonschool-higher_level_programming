@@ -1,3 +1,2 @@
 -- name 
-SELECT first_table;
-COUNT(*) FROM first_table where id = 89;
+SELECT COUNT(*) FROM first_table WHERE id = 89;
