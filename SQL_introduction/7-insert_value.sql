@@ -1,2 +1,2 @@
 -- hm
-INSERT INTO (id, name) VALUES (89,"Best School") FROM hbtn_0c_0;
+INSERT INTO (id, name) VALUES (89,"Best School")  hbtn_0c_0;
