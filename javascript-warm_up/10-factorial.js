@@ -10,7 +10,7 @@ function fact (i) {
       f = f * i;
       i++;
     }
-    console.log(f)
+    console.log(f);
   }
 }
 fact(i);
