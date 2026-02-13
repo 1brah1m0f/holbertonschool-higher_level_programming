@@ -4,7 +4,7 @@ let x1 = x;
 let i = 0;
 let a = '';
 while (x1 > 0) {
-  a = a + "X";
+  a = a + 'X';
   x1--;
 }
 if (isNaN(x)) {
