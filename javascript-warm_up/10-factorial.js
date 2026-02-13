@@ -5,7 +5,7 @@ let f = 1;
 function fact (i) {
   if (isNaN(a)) {
     console.log('1');
-} else   {
+  } else {
     while (i <= a) {
       f = f * i;
       i++;
