@@ -13,4 +13,4 @@ function fact (i) {
     console.log(f)
 }
 }
-fact(i)
+fact(i);
