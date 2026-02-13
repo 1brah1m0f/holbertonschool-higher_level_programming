@@ -1,3 +1,5 @@
 #!/usr/bin/node
 let a = 12;
-a = 89;
+let b = 89;
+a = b;
+
