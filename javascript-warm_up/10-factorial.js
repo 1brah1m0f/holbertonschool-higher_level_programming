@@ -7,7 +7,7 @@ function fact (i) {
   console.log('1');
 } else {
   while (i < a) {
-    f = f * s;
+    f = f * i;
     i++;
   }
   console.log(f)
