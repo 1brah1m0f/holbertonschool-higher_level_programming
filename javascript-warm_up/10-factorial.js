@@ -1,6 +1,6 @@
 #!/usr/bin/node
 const a = Number(process.argv[2]);
-let i = 1;
+const i = 1;
 let f = 1;
 function fact (i) {
   if (isNaN(a)) {
