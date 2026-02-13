@@ -10,8 +10,8 @@ while (x1 > 0) {
 if (isNaN(x)) {
   console.log('Missing size')
 } else {
-    while (i < x) {
-      console.log(a);
-      i++;
-    }
+  while (i < x) {
+    console.log(a);
+    i++;
+  }
 }
