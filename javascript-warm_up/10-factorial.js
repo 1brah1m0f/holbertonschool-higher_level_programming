@@ -11,6 +11,6 @@ function fact (i) {
       i++;
     }
     console.log(f)
-}
+  }
 }
 fact(i);
